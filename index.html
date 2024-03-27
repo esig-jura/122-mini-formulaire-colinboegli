@@ -19,21 +19,46 @@
 <h1>Mini Form</h1>
 <!-- VOTRE FORMULAIRE -->
 <form action="https://kode.ch/getpost/" method="post">
-    <div>
+    <ul class="form">
+    <li>
+        <label for="background">Arrière-plan</label>
+        <select name="background" id="background">
+            <option value="1.jpg">Arrière-plan 1</option>
+            <option value="2.jpg">Arrière-plan 2</option>
+            <option value="3.jpg" selected>Arrière-plan 3</option>
+        </select>
+    </li>
+    <li>
+        <fieldset>
+            <legend>Genre</legend>
+            <label>
+                <input type="radio" name="genre">
+                Homme
+            </label>
+            <label>
+                <input type="radio" name="genre">
+                Femme
+            </label>
+        </fieldset>
+    </li>
+    <li>
         <label for="email">E-mail</label>
-        <input id="email" type="email" name="email">
-    </div>
-    <div>
+        <input id="email" type="email" name="email"
+               placeholder="nom.prenom@divcom.ch"
+               autofocus required>
+    </li>
+    <li>
         <label for="mdp">Mot de passe</label>
         <input id="mdp" type="password" name="mdp">
-    </div>
-    <div>
+    </li>
+    <li>
         <label for="mdpc">Confirmer le mot de passe</label>
         <input id="mdpc" type="password" name="mdpc">
-    </div>
-    <div>
+    </li>
+    <li>
         <button>Créer un compte</button>
-    </div>
+    </li>
+    </ul>
 </form>
 
 
